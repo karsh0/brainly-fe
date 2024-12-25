@@ -34,7 +34,7 @@ export const Sidebar = () =>{
             <p className="text:md lg:text-lg text-gray-700 hidden md:block"> Tags</p>
             </div>
         </div>
-            <div><Button size="md" variant="danger" title={"Logout"} fullWidth={true} onClick={()=>{
+            <div className="hidden sm:block"><Button size="md" variant="danger" title={"Logout"} fullWidth={true} onClick={()=>{
                 localStorage.setItem('token','')
                 navigate('/signin')
             }}/></div>
