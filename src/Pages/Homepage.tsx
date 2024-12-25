@@ -8,10 +8,14 @@ import {CreateContentModal} from "./CreateContentModal"
 import { BACKEND_URL } from "../config"
 import axios from "axios"
 
+interface Content {
+  link: string; 
+  [key: string]: any; 
+}
 
 export const Homepage = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [contents, setContents] = useState([]);
+  const [contents, setContents] = useState<Content []>([]);
 
   useEffect(() => {
     axios

@@ -2,7 +2,7 @@
 interface InputProps{
     reference: any,
     placeholder: string,
-    onKeyUp?: ()=>void
+    onKeyUp?: (e:any)=>void
 }
 
 export function Input({reference, placeholder, onKeyUp}: InputProps){
